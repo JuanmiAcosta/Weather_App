@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+  <title>Weather & Pollen App</title>
 </head>
-
+<body>
+  <h1>Weather & Pollen App</h1>
+  <form>
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+    <button type="submit">Get Weather & Pollen Data</button>
+  </form>
+  <div id="weather-data">
+    <!-- Aquí se mostrarán los datos del tiempo -->
+  </div>
+  <div id="pollen-data">
+    <!-- Aquí se mostrarán los datos del polen -->
+  </div>
+</body>
 </html>
