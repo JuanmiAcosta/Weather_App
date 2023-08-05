@@ -22,13 +22,14 @@ h1{
     max-width: 80%;
     padding: 20px;
     background-color: #0e6dc0;
+    border:7px solid black;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 button{
     font-family: 'Handjet', cursive;
-    font-size: 30px;
+    font-size: 25px;
     background-color: #124673;
     border: none;
     border-radius: 5px;
@@ -47,6 +48,7 @@ label {
 label, input, button {
     display: inline-block;
     margin-right: 10px;
+
   }
   
   button {
@@ -56,4 +58,9 @@ label, input, button {
   input {
     font-family: 'Handjet', cursive; /* Cambiar la fuente del texto dentro del input */
     font-size: 30px;
+  }
+
+  hr {
+    margin-top: 20px; /* Margen superior */
+    margin-bottom: 20px; /* Margen inferior */
   }
