@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap" rel="stylesheet">
   <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <!--JS-->
+  <script src="script.js"></script>
   <title>Weather & Pollen App</title>
+  
 </head>
+
 <body>
-  <h1>Weather & Pollen App</h1>
-  <form>
-    <label for="city">City:</label>
-    <input type="text" id="city" name="city" required>
-    <button type="submit">Get Weather & Pollen Data</button>
-  </form>
-  <div id="weather-data">
-    <!-- Aquí se mostrarán los datos del tiempo -->
+  <div id="contenedor">
+
+    <h1>Weather & Pollen App</h1>
+
+    <form>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+      <button type="submit">Get Weather & Pollen Data</button>
+    </form>
+
+    <div id="weather-data">
+
+      <h2>Weather Data</h2>
+      <p> Weather data will be shown here</p>
+      <!-- Aquí se mostrarán los datos del tiempo -->
+
+    </div>
+
+    <div id="pollen-data">
+
+      <h2>Pollen Data</h2>
+      <p> Pollen data will be shown here</p>
+      <!-- Aquí se mostrarán los datos del polen -->
+
+    </div>
+
   </div>
-  <div id="pollen-data">
-    <!-- Aquí se mostrarán los datos del polen -->
-  </div>
+
 </body>
+
 </html>
