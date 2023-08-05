@@ -23,7 +23,7 @@
 
     <form>
       <label for="city">City:</label>
-      <input type="text" id="city" name="city" required>
+      <input type="text" placeholder=" Introduzca región..." id="city" spellcheck="false" name="city" required>
       <button type="submit">Get Weather & Pollen Data</button>
     </form>
 
@@ -32,19 +32,30 @@
     <div id="weather-data">
 
       <h2>Weather Data</h2>
-      <p> Weather data will be shown here</p>
-      <!-- Aquí se mostrarán los datos del tiempo -->
-
+      <div id="img_contenedor">
+        <img src="icons/soleado_charizard.png" alt="Soleado" id="weather-icon">
+      </div>
+      <h2 id="temp">38ºC</h3>
+        <h2 id="city"> Granada</h3>
+          <div id="detalles">
+            <div id="col">
+              <img src="icons/humedad_castform.png" alt="Termómetro" id="termometro">
+              <h3>Humedad: <span id="humedad"> 50%</span></h3>
+            </div>
+            <div id="col">
+              <img src="icons/viento_castform.png" alt="Viento" id="viento">
+              <h3>Viento: <span id="humedad"> 10km/h</span></h3>
+            </div>
+          </div>
+          <!-- Aquí se mostrarán los datos del tiempo -->
+<!--  
+    </div>    
+      <div id="pollen-data">
+        <h2>Pollen Data</h2>
+        <p> Pollen data will be shown here</p>   
+      </div>
     </div>
-
-    <div id="pollen-data">
-
-      <h2>Pollen Data</h2>
-      <p> Pollen data will be shown here</p>
-      <!-- Aquí se mostrarán los datos del polen -->
-
-    </div>
-
+-->
   </div>
 
 </body>
