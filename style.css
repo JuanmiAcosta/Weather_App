@@ -86,6 +86,10 @@ button {
   display:inline-flex
 }
 
+#predominante {
+  margin-top:20px;
+} 
+
 #temp,
 #sen,
 #porcentaje,
