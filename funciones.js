@@ -4,8 +4,15 @@ import { APIKEY , APIURL } from './constantes.js';
 
 export async function fetchData(city){
     try{
-        const response = await fetch(APIURL + city + '&appid=${APIKEY}');
+        const response = await fetch(APIURL + city + '&appid=' + APIKEY);
         const data = await response.json();
+
+        if (data === null) {
+            console.log('La variable data es null');
+          } else {
+            console.log('La variable data contiene datos:', data);
+          }
+
         console.log(data);
         return data;
 

@@ -7,19 +7,6 @@
 body {
   font-family: 'Handjet', cursive;
   background-color:rgb(0, 0, 0);
-  /*
-  background-image: linear-gradient(0deg,
-      hsl(240deg 58% 34%) 0%,
-      hsl(217deg 100% 32%) 23%,
-      hsl(212deg 100% 36%) 38%,
-      hsl(207deg 100% 38%) 49%,
-      hsl(202deg 100% 39%) 59%,
-      hsl(196deg 100% 38%) 67%,
-      hsl(189deg 100% 37%) 75%,
-      hsl(180deg 100% 35%) 83%,
-      hsl(171deg 100% 38%) 91%,
-      hsl(162deg 85% 44%) 100%);
-  */
   justify-content: center;
   align-items: center;
 }
@@ -172,4 +159,10 @@ hr {
   display: flex;
   align-items: center;
   text-align: bottom;
+}
+
+@media (max-width: 400px) {
+  #col {
+    flex-direction: column;
+  }
 }
