@@ -5,13 +5,14 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,"> <!--Para que no aparezca error del icono de la página-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap" rel="stylesheet">
   <!--CSS-->
   <link rel="stylesheet" href="style.css">
   <!--JS-->
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
   <title>Weather & Pollen App</title>
 
 </head>
@@ -21,9 +22,9 @@
 
     <h1>Weather & Pollen App</h1>
 
-    <form>
+    <form id="buscador">
       <label for="city">City:</label>
-      <input type="text" placeholder=" Introduzca región..." id="city" spellcheck="false" name="city" required>
+      <input type="text" placeholder=" Type a city..." id="city" spellcheck="false" name="city" required>
       <button type="submit">Get Weather & Pollen Data</button>
     </form>
 
@@ -31,24 +32,27 @@
 
     <div id="weather-data">
 
-      <h2>Weather Data</h2>
+      <h2 id="titulo">Weather Data</h2>
       <div id="img_contenedor">
         <img src="icons/soleado_charizard.png" alt="Soleado" id="weather-icon">
       </div>
-      <h2 id="temp">38ºC</h3>
-        <h2 id="city"> Granada</h3>
-          <div id="detalles">
-            <div id="col">
-              <img src="icons/humedad_castform.png" alt="Termómetro" id="termometro">
-              <h3>Humedad: <span id="humedad"> 50%</span></h3>
-            </div>
-            <div id="col">
-              <img src="icons/viento_castform.png" alt="Viento" id="viento">
-              <h3>Viento: <span id="humedad"> 10km/h</span></h3>
-            </div>
-          </div>
-          <!-- Aquí se mostrarán los datos del tiempo -->
-<!--  
+      <div id="datos">
+        <h2 id="temp">38ºC</h2>
+        <h2 id="sen">Sunny</h2>
+      </div>
+      <h2 id="city-name"> Granada</h2>
+      <div id="detalles">
+        <div id="col">
+          <img src="icons/humedad_castform.png" alt="Humedad" id="humedad">
+          <h3>Humidity: <span id="hum"> 50%</span></h3>
+        </div>
+        <div id="col">
+          <img src="icons/viento_castform.png" alt="Viento" id="viento">
+          <h3>Wind: <span id="wind"> 10km/h</span></h3>
+        </div>
+      </div>
+      <!-- Aquí se mostrarán los datos del tiempo -->
+      <!--  
     </div>    
       <div id="pollen-data">
         <h2>Pollen Data</h2>
@@ -56,7 +60,7 @@
       </div>
     </div>
 -->
-  </div>
+    </div>
 
 </body>
 

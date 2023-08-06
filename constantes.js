@@ -1,0 +1,5 @@
+// DEFINICIÓN DE CONSTANTES
+
+export const APIKEY = "db855f64e2ab1800dd59a76414f8824f";
+export const APIURL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+

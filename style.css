@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,8 +6,20 @@
 
 body {
   font-family: 'Handjet', cursive;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background-color:rgb(0, 0, 0);
+  /*
+  background-image: linear-gradient(0deg,
+      hsl(240deg 58% 34%) 0%,
+      hsl(217deg 100% 32%) 23%,
+      hsl(212deg 100% 36%) 38%,
+      hsl(207deg 100% 38%) 49%,
+      hsl(202deg 100% 39%) 59%,
+      hsl(196deg 100% 38%) 67%,
+      hsl(189deg 100% 37%) 75%,
+      hsl(180deg 100% 35%) 83%,
+      hsl(171deg 100% 38%) 91%,
+      hsl(162deg 85% 44%) 100%);
+  */
   justify-content: center;
   align-items: center;
 }
@@ -19,17 +31,38 @@ h1 {
   text-align: center;
 }
 
-h2{
+h2 {
   margin-bottom: 20px;
+}
+
+#titulo{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Handjet', cursive;
+  font-size: 40px;
+  color: white;
+  text-align: center;
 }
 
 #contenedor {
   text-align: center;
-  width:90%;
+  width: 90%;
   max-width: 700px;
-  padding: 40px 40px;
-  background-color: #0e6dc0;
-  border: 7px solid black;
+  padding: 20px 20px;
+  background-image: linear-gradient(
+  180deg,
+  hsl(240deg 58% 34%) 0%,
+  hsl(217deg 100% 32%) 5%,
+  hsl(212deg 100% 36%) 10%,
+  hsl(207deg 100% 38%) 15%,
+  hsl(202deg 100% 39%) 22%,
+  hsl(196deg 100% 38%) 31%,
+  hsl(189deg 100% 37%) 50%,
+  hsl(180deg 100% 35%) 75%,
+  hsl(171deg 100% 38%) 89%,
+  hsl(162deg 85% 44%) 100%
+);
+  border: 7px solid rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin: 100px auto 0;
@@ -60,7 +93,15 @@ input,
 button {
   display: inline-block;
   margin-right: 10px;
+}
 
+#datos {
+  display:inline-flex
+}
+
+#temp,
+#sen {
+  margin: 10px;
 }
 
 button {
@@ -106,8 +147,8 @@ hr {
   /* Permite que la altura se ajuste automáticamente para mantener la proporción */
 }
 
-#detalles{
-  display:flex;
+#detalles {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
@@ -118,18 +159,17 @@ hr {
   text-align: center;
 }
 
-#termometro{
+#humedad {
   margin-right: 15px;
   width: 40px;
 }
-#viento{
+
+#viento {
   width: 70px;
 }
 
-#col{
-  display:flex;
+#col {
+  display: flex;
   align-items: center;
   text-align: bottom;
 }
-
-
