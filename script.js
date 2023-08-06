@@ -1,4 +1,4 @@
-import { fetchData } from './funciones.js';
+import { fetchData, updateData, updateIcon } from './funciones.js';
 import { CITY, BTN } from './constantes.js';
 
 BTN.addEventListener("mouseover", () => {
@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         fetchData(CITY.value)
             .then(data => {
-                document.querySelector("#city-name").innerHTML = data.name; // Usamos el nuevo selector para el nombre de la ciudad
-                document.querySelector("#temp").innerHTML = Math.round(data.main.temp) + "ºC";
-                document.querySelector("#sen").innerHTML = data.weather[0].description;
-                document.querySelector("#hum").innerHTML = data.main.humidity + "%";
-                document.querySelector("#wind").innerHTML = data.wind.speed + "Km/h";
+
+                updateData(data);
+                updateIcon(data);
+                document.querySelector("#data").style.display = "block";
+
             })
             .catch(error => {
                 console.log(error);

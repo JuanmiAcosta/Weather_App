@@ -26,42 +26,54 @@
       <button id="btn" type="submit">Get Weather & Pollen Data</button>
     </form>
 
+    <div id="error">
+      <h2 style="color:red;">City not found</h2>
+    </div>
+
     <hr>
+    <div id="data">
+      <div id="weather-data">
 
-    <div id="weather-data">
-
-      <h2 id="titulo">Weather Data</h2>
-      <div id="img_contenedor">
-        <img src="icons/soleado_charizard.png" alt="Soleado" id="weather-icon">
-      </div>
-      <div id="datos">
-        <h2 id="temp">38ºC</h2>
-        <h2 id="sen">Sunny</h2>
-      </div>
-      <h2 id="city-name"> Granada</h2>
-      <div id="detalles">
-        <div id="col">
-          <img src="icons/humedad_castform.png" alt="Humedad" id="humedad">
-          <h3>Humidity: <span id="hum"> 50%</span></h3>
+        <h2 id="titulo">Weather Data</h2>
+        <div id="img_contenedor">
+          <img src="icons/soleado_charizard.png" alt="Soleado" id="weather-icon">
         </div>
-        <div id="col">
-          <img src="icons/viento_castform.png" alt="Viento" id="viento">
-          <h3>Wind: <span id="wind"> 10km/h</span></h3>
+        <div id="datos">
+          <h2 id="temp">38ºC</h2>
+          <h2 id="sen">Sunny</h2>
+        </div>
+        <h2 id="city-name"> Granada</h2>
+        <div id="detalles">
+          <div id="col">
+            <img src="icons/humedad_castform.png" alt="Humedad" id="humedad">
+            <h3>Humidity: <span id="hum"> 50%</span></h3>
+          </div>
+          <div id="col">
+            <img src="icons/viento_castform.png" alt="Viento" id="viento">
+            <h3>Wind: <span id="wind"> 10km/h</span></h3>
+          </div>
         </div>
       </div>
-      <!-- Aquí se mostrarán los datos del tiempo -->
-      <!--  
-    </div>    
+<!--
       <div id="pollen-data">
-        <h2>Pollen Data</h2>
-        <p> Pollen data will be shown here</p>   
+        <h2 id="titulo">Pollen Data</h2>
+        <div id="img_contenedor">
+          <img src="icons/bastante_pollen_vileplume.png" alt="Bastante Pollen" id="pollen-icon">
+        </div>
+        <div id="datos">
+          <h2 id="porcentaje">58%</h2>
+          <h2>Predominante: <span id="predominante"> Pino </span></h2>
+        </div>
+        <h2 id="city-name"> Granada</h2>
       </div>
     </div>
 -->
-    </div>
+    
+  </div>
+  </div>
 
-    <script type="module" src="script.js"></script>
+  <script type="module" src="script.js"></script>
 
-  </body>
+</body>
 
 </html>

@@ -18,7 +18,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
+#datos h2 {
   margin-bottom: 20px;
 }
 
@@ -87,7 +87,9 @@ button {
 }
 
 #temp,
-#sen {
+#sen,
+#porcentaje,
+#predominante {
   margin: 10px;
 }
 
@@ -159,6 +161,14 @@ hr {
   display: flex;
   align-items: center;
   text-align: bottom;
+}
+
+#data{
+  display:none;
+}
+
+#error{
+  display:none;
 }
 
 @media (max-width: 400px) {
