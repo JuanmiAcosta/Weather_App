@@ -11,6 +11,7 @@ export async function fetchData(city) {
             document.querySelector("#error").style.display = "block";
             document.querySelector("#data").style.display = "none";
         }else{
+            document.querySelector("#error").style.display = "none";
             console.log(data);
             return data;
         }
