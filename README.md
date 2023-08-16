@@ -1,6 +1,6 @@
 # Weather-App 📓
 
-En este proyecto me inicio en el uso de javascript en frontend. Aprendizaje de conceptos como el uso de APIs y manejo de archivos JSON, async functions, y manejo del DOM. 🤔
+En este proyecto me inicio en el uso de javascript en frontend. Aprendizaje de conceptos como el uso de APIs y manejo de archivos JSON, async functions, y manejo del DOM.🤔
 
 ![Imagen representativa](https://github.com/JuanmiAcosta/Weather_App/blob/main/captura.png?raw=true)
 
